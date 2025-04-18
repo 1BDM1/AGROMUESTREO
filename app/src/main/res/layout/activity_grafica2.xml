@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F30A5D83"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ConstrainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity">
+
+
+        <com.jjoe64.graphview.GraphView
+            android:id="@+id/Grafica"
+            android:layout_width="wrap_content"
+            android:layout_height="330dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="MissingConstraints" />
+
+
+        <EditText
+            android:id="@+id/Numero2"
+            android:layout_width="202dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="11dp"
+            android:ems="10"
+            android:hint="Número observado"
+            android:imeOptions="actionSend"
+            android:inputType="number"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.124"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Grafica"
+            app:layout_constraintVertical_bias="0.02" />
+
+        <ListView
+            android:id="@+id/lw2"
+            android:layout_width="101dp"
+            android:layout_height="230dp"
+            android:layout_marginTop="16dp"
+            android:paddingEnd="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.095"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Numero2"
+            app:layout_constraintVertical_bias="0.175"></ListView>
+
+        <TextView
+            android:id="@+id/suma2"
+            android:layout_width="174dp"
+            android:layout_height="54dp"
+            android:hint="Suma"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.932"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.044"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_eliminarcta"
+            android:drawableLeft="@drawable/ic_restore"
+            android:onClick="editar"
+            android:text="Editar"
+            app:backgroundTint="@null"
+            app:layout_constraintBottom_toTopOf="@+id/lw2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toEndOf="@+id/Numero2"
+            app:layout_constraintTop_toBottomOf="@+id/Grafica"
+            app:layout_constraintVertical_bias="0.44" />
+
+        <ListView
+            android:layout_width="150dp"
+            android:layout_height="230dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.479"
+            app:layout_constraintStart_toEndOf="@+id/lw2"
+            app:layout_constraintTop_toBottomOf="@+id/Numero2"
+            app:layout_constraintVertical_bias="0.309" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

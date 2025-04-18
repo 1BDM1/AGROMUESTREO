@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Agromuestreo</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">CONTACTO</string>
+    <string name="nav_header_subtitle">correo_contacto@chapingo.mx</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Ayuda</string>
+
+    <string name="menu_home">MUESTREO</string>
+    <string name="menu_gallery">HISTORIAL</string>
+    <string name="menu_slideshow">AYUDA Y PREGUNTAS FRECUENTES</string>
+    <string name="menu_user">USUARIO</string>
+    <string name="menu_noticias">NOTICIAS</string>
+
+
+    <string name="INSTRUCCIONes">INSTRUCCIONES DE MUESTREO</string>
+    <string name="INT1">Dependiendo de la plaga a evaluar, deberá elegir si es conveniente evaluar toda la planta o únicamente una parte de ella. Por ejemplo, para evaluar gusano cogollero es recomendable evaluar la planta completa; mientras que, para mosca blanca, se recomienda hacer los conteos tomando una hoja por planta. La evaluación se puede hacer en tallos, hojas, foliolos o frutos, dependiendo de los hábitos de la plaga y el tamaño del cultivo.</string>
+    <string name="INT2">Para comenzar el muestreo, elija uno de los siguientes esquemas para recorrer el terreno:</string>
+    <string name="INT31">Para terrenos de este tamaño, deberá tomar puntos de muestreo cada 10 metros (pasos).</string>
+    <string name="INT32">Deberá tomar puntos de muestreo cada 20 metros (pasos).</string>
+    <string name="INT33">Se recomienda dividir la superficie en lotes de 3 hectáreas. Deberá tomar puntos de muestreo cada 20 metros (pasos).</string>
+    <string name="INT4">Si termina el recorrido y todavía no se alcanza el punto de terminación, deberá continuar con el registro de datos y hacer otro recorrido por el terreno, iniciando desde un punto diferente del terreno.</string>
+    <string name="INT5">Los puntos de muestreo deben ser elegidos al azar. No se dirija deliberadamente a las plantas visiblemente infestadas.</string>
+
+
+    <string name="INSTRUCCION1">SELECCIONE EL TIPO DE CULTIVO</string>
+
+    <string name="INSTRUCCION2">SELECCIONE LA PLAGA</string>
+
+    <string name="BOTON1">Anterior</string>
+
+    <string name="BOTON2">Siguiente</string>
+
+
+    <string name="COMENZAR">Iniciar</string>
+
+    <string name="SELECCION1">Seleccione el cultivo</string>
+
+    <string name="SELECCION2">Seleccione la plaga</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+</resources>

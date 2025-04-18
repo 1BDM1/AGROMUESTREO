@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ConstrainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity">
+
+
+        <com.jjoe64.graphview.GraphView
+            android:id="@+id/Grafica"
+            android:layout_width="wrap_content"
+            android:layout_height="330dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="MissingConstraints" />
+
+
+        <EditText
+            android:id="@+id/Numero"
+            android:layout_width="169dp"
+            android:layout_height="61dp"
+            android:layout_marginTop="11dp"
+            android:ems="10"
+            android:hint="Número observado"
+            android:imeOptions="actionSend"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.124"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Grafica"
+            app:layout_constraintVertical_bias="0.02" />
+
+        <ListView
+            android:id="@+id/lw"
+            android:layout_width="101dp"
+            android:layout_height="230dp"
+            android:layout_marginTop="16dp"
+            android:paddingEnd="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.095"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Numero"
+            app:layout_constraintVertical_bias="0.175"></ListView>
+
+        <TextView
+            android:id="@+id/suma"
+            android:layout_width="174dp"
+            android:layout_height="54dp"
+            android:hint="Suma"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.067"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.023"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_logout"
+            android:drawableLeft="@drawable/ic_restore"
+            android:onClick="editar"
+            android:text="Editar"
+            app:backgroundTint="@null"
+            app:layout_constraintBottom_toTopOf="@+id/lw"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.574"
+            app:layout_constraintStart_toEndOf="@+id/Numero"
+            app:layout_constraintTop_toBottomOf="@+id/Grafica"
+            app:layout_constraintVertical_bias="0.283" />
+
+        <ListView
+            android:id="@+id/parametros"
+            android:layout_width="220dp"
+            android:layout_height="230dp"
+            android:layout_marginTop="16dp"
+            android:paddingEnd="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.827"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Numero"
+            app:layout_constraintVertical_bias="0.172" />
+
+        <Button
+            android:id="@+id/guardar1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_logout"
+            android:drawableLeft="@drawable/ic_guardar"
+            android:text="Guardar"
+            app:backgroundTint="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.733"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/parametros"
+            app:layout_constraintVertical_bias="0.157" />
+
+        <TextView
+            android:id="@+id/PLAGA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/Grafica"
+            app:layout_constraintEnd_toEndOf="@+id/Grafica"
+            app:layout_constraintHorizontal_bias="0.902"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.051" />
+
+        <Button
+            android:id="@+id/Detallesbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/btn_logout"
+            android:drawableLeft="@drawable/ic_datos"
+            android:text="Datos"
+            app:backgroundTint="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guardar1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lw"
+            app:layout_constraintVertical_bias="0.157" />
+
+        <ImageView
+            android:id="@+id/AYUDA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/parametros"
+            app:layout_constraintEnd_toStartOf="@+id/button7"
+            app:layout_constraintHorizontal_bias="0.636"
+            app:layout_constraintStart_toEndOf="@+id/Numero"
+            app:layout_constraintTop_toBottomOf="@+id/Grafica"
+            app:layout_constraintVertical_bias="0.25"
+            app:srcCompat="@android:drawable/ic_menu_help" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

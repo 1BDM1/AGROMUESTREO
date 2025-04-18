@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <group android:checkableBehavior="single"
+        android:layout_height="match_parent"
+        >
+        <item
+            android:id="@+id/user_fragment"
+            android:icon="@drawable/ic_person"
+            android:title="@string/menu_user" />
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/statistics"
+            android:title="INICIO" />
+
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_calendar"
+            android:title="@string/menu_gallery" />
+        <item
+            android:id="@+id/noticias"
+            android:icon="@drawable/ic_notice"
+            android:title="@string/menu_noticias"/>
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_help"
+            android:title="@string/menu_slideshow" />
+
+        <item
+            android:id="@+id/face"
+            android:layout_gravity="bottom"
+            android:icon="@drawable/ic_facebook"
+            android:onClick="openFacebookPage"
+            android:title="Agromuestreo" />
+    </group>
+
+
+
+</menu>

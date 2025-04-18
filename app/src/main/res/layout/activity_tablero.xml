@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/detras"
+        tools:context=".ui.Tablero">
+
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/agromneg" />
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart = "25dp"
+            android:layout_marginTop="15dp"
+            android:background= "@color/colorWhite"
+            app:layout_constraintTop_toBottomOf="@+id/imageView10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/userImagen"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+
+                android:src="@drawable/userimg"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/usarer"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="userNombre"
+                android:paddingStart = "35dp"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/userNombre"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="userNombre"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/userImagen" />
+        </LinearLayout>
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1,2,3"
+            android:background= "@color/colorWhite"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@id/linearLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <!-- Fila de ejemplo  android:background= "#ABC8BFBF"-->
+
+            <!-- Repite TableRow para las filas restantes... -->
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!-- Columna de imagen -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="MEDALLA"
+                    android:background = "@color/colorWhite"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+                <!-- Columna de texto --> <!-- Reemplaza con tu imagen -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="CATEGORIA"
+                    android:textAlignment="center"
+                    android:background = "@color/colorWhite"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+                <!-- Columna de texto -->
+
+                <!-- Otra columna de texto -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="TIPO DE HOJA"
+                    android:textAlignment="center"
+                    android:background = "@color/colorWhite"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <!-- Columna de dígitos con 2 decimales -->
+                <TextView
+                    android:layout_height="match_parent"
+                    android:layout_width="wrap_content"
+                    android:digits="0123456789."
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:background = "@color/colorWhite"
+                    android:maxLength="5"
+                    android:text="I.LIN"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:textStyle="bold" /> <!-- Ejemplo: 99.99 -->
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!-- Columna de imagen -->
+                <ImageView
+                    android:id="@+id/imll"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/uno" /> <!-- Reemplaza con tu imagen -->
+
+                <TextView
+                    android:id="@+id/clll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="SEMILLA\n(APRENDIZ)"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+                <!-- Columna de texto -->
+
+                <!-- Otra columna de texto -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Linear lancelolada"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <!-- Columna de dígitos con 2 decimales -->
+                <TextView
+                    android:id="@+id/pcll"
+                    android:layout_height="match_parent"
+                    android:layout_width="wrap_content"
+                    android:digits="0123456789."
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:maxLength="5"
+                    android:text="0.0"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:textStyle="bold" /> <!-- Ejemplo: 99.99 -->
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!-- Columna de imagen -->
+                <ImageView
+                    android:id="@+id/ime"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/uno" /> <!-- Reemplaza con tu imagen -->
+
+                <TextView
+                    android:id="@+id/cle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="SEMILLA\n(APRENDIZ)"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+                <!-- Columna de texto -->
+
+                <!-- Otra columna de texto -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Eliptica"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <!-- Columna de dígitos con 2 decimales -->
+                <TextView
+                    android:id="@+id/pce"
+                    android:layout_height="match_parent"
+                    android:layout_width="wrap_content"
+                    android:digits="0123456789."
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:maxLength="5"
+                    android:text="0.0"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:textStyle="bold" /> <!-- Ejemplo: 99.99 -->
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!-- Columna de imagen -->
+                <ImageView
+                    android:id="@+id/iml"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/uno" /> <!-- Reemplaza con tu imagen -->
+
+                <TextView
+                    android:id="@+id/cll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="SEMILLA\n(APRENDIZ)"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+                <!-- Columna de texto -->
+
+                <!-- Otra columna de texto -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Lobulada"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <!-- Columna de dígitos con 2 decimales -->
+                <TextView
+                    android:id="@+id/pcl"
+                    android:layout_height="match_parent"
+                    android:layout_width="wrap_content"
+                    android:digits="0123456789."
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:maxLength="5"
+                    android:text="0.0"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:textStyle="bold" /> <!-- Ejemplo: 99.99 -->
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!-- Columna de imagen -->
+                <ImageView
+                    android:id="@+id/imp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/uno" /> <!-- Reemplaza con tu imagen -->
+
+                <TextView
+                    android:id="@+id/clp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="SEMILLA\n(APRENDIZ)"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+                <!-- Columna de texto -->
+
+                <!-- Otra columna de texto -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Palmeada"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="12dp"/>
+
+                <!-- Columna de dígitos con 2 decimales -->
+                <TextView
+                    android:id="@+id/pcp"
+                    android:layout_height="match_parent"
+                    android:layout_width="wrap_content"
+                    android:digits="0123456789."
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:maxLength="5"
+                    android:text="0.0"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:textStyle="bold|italic" /> <!-- Ejemplo: 99.99 -->
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!-- Columna de imagen -->
+                <ImageView
+                    android:id="@+id/imt"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/uno" /> <!-- Reemplaza con tu imagen -->
+
+                <TextView
+                    android:id="@+id/clt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="SEMILLA\n(APRENDIZ)"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+                <!-- Columna de texto -->
+
+                <!-- Otra columna de texto -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Triangular"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <!-- Columna de dígitos con 2 decimales -->
+                <TextView
+                    android:id="@+id/pct"
+                    android:layout_height="match_parent"
+                    android:layout_width="wrap_content"
+                    android:digits="0123456789."
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:maxLength="5"
+                    android:text="0.0"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:textStyle="bold" /> <!-- Ejemplo: 99.99 -->
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!-- Columna de imagen -->
+                <ImageView
+                    android:id="@+id/img"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/uno" /> <!-- Reemplaza con tu imagen -->
+
+                <TextView
+                    android:id="@+id/clg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="SEMILLA\n(APRENDIZ)"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+                <!-- Columna de texto -->
+
+                <!-- Otra columna de texto -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="GENERAL"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <!-- Columna de dígitos con 2 decimales -->
+                <TextView
+                    android:id="@+id/pcg"
+                    android:layout_height="match_parent"
+                    android:layout_width="wrap_content"
+                    android:digits="0123456789."
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:maxLength="5"
+                    android:text="0.0"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:textStyle="bold" /> <!-- Ejemplo: 99.99 -->
+            </TableRow>
+
+        </TableLayout>
+
+        <Button
+            android:id="@+id/BOTONES"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_logout2"
+            android:text="TOP 5"
+            android:textSize="20dp"
+            app:backgroundTint="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tableLayout"
+            app:layout_constraintVertical_bias="0.038" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
