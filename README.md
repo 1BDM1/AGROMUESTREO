@@ -41,6 +41,7 @@ La app permite:
 - 🔧 Conexión a internet para sincronización con Firebase (opcional para algunos módulos)
 - 📦 Tamaño aproximado: ~13 MB
 - 📅 Última versión publicada: **1.3.0a** (julio 2024)
+- Versión de prueba actual **1.3.3f.1** (abril 2025)
 
 ---
 
@@ -83,15 +84,15 @@ Delgadillo Marín, B., & Soto Rojas, L. (2024). Agromuestreo (v1.3.0a) [Software
 
 También puedes usar el archivo [`CITATION.cff`](./CITATION.cff) para importar la cita automáticamente en gestores como Zotero o Mendeley.
 
+📄 Cite this tool: [10.5281/zenodo.15320452](https://doi.org/10.5281/zenodo.15320451)
+
+
 ---
 
-## 🧪 Datos de prueba (opcional)
-
-Puedes agregar ejemplos o archivos de prueba en una carpeta `datos_ejemplo/` si deseas permitir pruebas reproducibles.
 
 ---
 
 ## 🤝 Contribuciones
 
-Actualmente no se aceptan contribuciones externas. Si deseas colaborar, contáctanos por correo electrónico.
+Actualmente no se aceptan contribuciones externas. Si deseas colaborar, contáctanos al correo de soporte para poder añadirte en la versión de prueba de Play Store
 
