@@ -74,6 +74,15 @@ Próximamente se incluirá una guía técnica detallada en PDF.
 Este proyecto está bajo la licencia MIT.  
 Consulta el archivo [`LICENSE`](./LICENSE) para más información.
 
+## 📄 Licencia de los datos
+
+Los datos  incluidos en este repositorio se distribuyen bajo la licencia **Creative Commons Attribution 4.0 International (CC BY 4.0)**.
+
+🔗 [https://creativecommons.org/licenses/by/4.0/](https://creativecommons.org/licenses/by/4.0/)
+
+Esto significa que puedes copiar, distribuir, transformar y construir a partir de estos datos, incluso para fines comerciales, siempre y cuando se otorgue el crédito correspondiente.
+
+
 ---
 
 ## 📖 Cómo citar este software
@@ -90,7 +99,6 @@ También puedes usar el archivo [`CITATION.cff`](./CITATION.cff) para importar l
 ---
 
 
----
 
 ## 🤝 Contribuciones
 
