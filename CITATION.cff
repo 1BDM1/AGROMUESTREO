@@ -11,3 +11,11 @@ date-released: 2024-07-20
 url: https://github.com/1BDM1/AGROMUESTREO
 repository-code: https://github.com/1BDM1/AGROMUESTREO.git
 doi: 10.5281/zenodo.15320452
+
+# Licencia para los datos incluidos
+# (esto es adicional a la licencia del software)
+
+dataset:
+  license: CC-BY-4.0
+  url: https://creativecommons.org/licenses/by/4.0/
+  description: Datos de ejemplo incluidos en el repositorio, con fines de demostración y validación.
