@@ -1,5 +1,5 @@
 # 🌱 AGROMUESTREO
-### Muestreo de Plagas y Enfermedades Agrícolas
+### Muestreo de Plagas Agrícolas
 
 ---
 
